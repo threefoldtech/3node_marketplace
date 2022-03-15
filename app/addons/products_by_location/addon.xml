@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>products_by_location</id>
+    <version>1.0</version>
+    <default_language>en</default_language>
+    <priority>100</priority>
+    <status>active</status>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <queries>
+        <item for="install">
+            ALTER TABLE `?:products` ADD `product_location` VARCHAR(255) NOT NULL;
+        </item>
+        <item for="uninstall">ALTER TABLE `?:products` DROP `product_location`;</item>
+    </queries>
+</addon>

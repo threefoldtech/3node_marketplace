@@ -1,0 +1,28 @@
+ty-blog__date {
+    display: none !important; }
+
+.ty-sort-container__views-a {
+    box-sizing: unset;
+}
+
+.bottom-copyright_checkout {
+    margin-top: 15px;
+    color: @footer_text;
+    font-size: 13px;
+    text-indent: 30px;
+}
+
+// ==== Vendor search block custom CSS
+.ty-vendor-search-block {
+ margin-top: 7px;
+}
+
+// === Tab heigh correction
+.ty-tabs__a,
+.ty-tabs .subtab a {
+    display: block;
+    padding: 8px 21px 2px 18px;
+    height: 33px;  //  23px - original value
+    color: #7c7e80;
+    text-decoration: none;
+}

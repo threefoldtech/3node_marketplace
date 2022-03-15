@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+	<id>hw_popup_info</id>
+	<version>2.1</version>
+	<priority>700</priority>
+	<position>0</position>
+	<status>active</status>
+	<default_language>en</default_language>
+	<auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+	<has_icon>Y</has_icon>
+	<supplier>Hungryweb</supplier>
+	<supplier_link>https://www.hungryweb.net</supplier_link>   
+	<authors>
+	   <author>
+	       <name>Hungryweb</name>
+	       <email>info@hungryweb.net</email>
+	       <url>https://www.hungryweb.net</url>
+	   </author>
+	</authors>
+	<settings edition_type="ROOT,ULT:VENDOR" layout="separate">
+		<sections>
+			<section id="general">
+				<items>
+					<item id="banner_id">
+						<type>input</type>
+						<default_value></default_value>
+					</item>
+					<item id="width">
+						<type>input</type>
+						<default_value>300</default_value>
+					</item>						
+					<item id="testmode">
+						<type>checkbox</type>
+						<default_value>N</default_value>
+					</item>
+					<item id="delay">
+						<type>input</type>
+						<default_value>0</default_value>
+					</item>
+				</items>
+			</section>
+            <section id="license_updates">
+                <items>
+                    <item id="license">
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                    <item id="license_info">
+                        <type>info</type>
+                        <handler>fn_hw_dublin_license_info</handler>
+                    </item>
+                </items>
+            </section>
+            <section id="support">
+                <items>                 
+                    <item id="template">
+                        <type>template</type>
+                        <default_value>support.tpl</default_value>
+                    </item>                 
+                </items>                    
+            </section>            
+        </sections>
+    </settings>  
+    <functions>
+        <item for="install">fn_hw_popup_info_install</item>
+        <item for="uninstall">fn_hw_popup_info_uninstall</item>
+    </functions>  
+</addon>

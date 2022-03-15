@@ -1,0 +1,4 @@
+__MACOSX/
+var/
+upgrades/core*
+!upgrades/source_restore.php

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>wk_cl_geolocation</id>
+    <version>1.2</version>
+    <priority>100</priority>
+    <position>50</position>
+    <status>active</status>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <supplier>Webkul</supplier>
+    <supplier_link>https://store.webkul.com/CS-Cart.html</supplier_link>
+    <settings edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="languge">
+                        <type>selectbox</type>
+                        <variants></variants>
+                    </item> 
+                    <item id="currency">
+                        <type>selectbox</type>
+                        <variants></variants>
+                    </item>
+                </items>
+            </section> 
+        </sections>
+    </settings>
+    <queries>
+        <item>DROP TABLE IF EXISTS ?:wk_cl_geolocation;</item>
+        <item>
+            CREATE TABLE `?:wk_cl_geolocation` (
+                `country_code` char(2) NOT NULL DEFAULT '',
+                `lang_code` char(2) NOT NULL DEFAULT '',
+                `currency_code` varchar(10) NOT NULL DEFAULT '',
+                `status` char(1) NOT NULL DEFAULT 'A',
+                PRIMARY KEY  (`country_code`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:wk_cl_geolocation;</item>
+    </queries>
+</addon>
+
+

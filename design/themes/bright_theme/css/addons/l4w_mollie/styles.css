@@ -1,0 +1,41 @@
+#l4w_mollie {
+
+}
+
+#l4w_mollie li.methods-option {
+    padding-left: 53px;
+    line-height: 40px;
+}
+
+#l4w_mollie li.methods-option.ideal {
+    background: url('images/addons/l4w_mollie/ideal.png') no-repeat;
+}
+
+#l4w_mollie li.methods-option.paypal {
+    background: url('images/addons/l4w_mollie/paypal.png') no-repeat;
+}
+
+#l4w_mollie li.methods-option.banktransfer {
+    background: url('images/addons/l4w_mollie/banktransfer.png') no-repeat;
+}
+
+#l4w_mollie li.methods-option.bitcoin {
+    background: url('images/addons/l4w_mollie/bitcoin.png') no-repeat;
+}
+
+#l4w_mollie li.methods-option.creditcard {
+    background: url('images/addons/l4w_mollie/creditcard.png') no-repeat;
+}
+
+#l4w_mollie li.methods-option.mistercash {
+    background: url('images/addons/l4w_mollie/mistercash.png') no-repeat;
+}
+
+#l4w_mollie li.methods-option.paysafecard {
+    background: url('images/addons/l4w_mollie/paysafecard.png') no-repeat;
+}
+
+#l4w_mollie li.methods-option.sofort {
+    background: url('images/addons/l4w_mollie/sofort.png') no-repeat;
+}
+

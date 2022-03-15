@@ -1,0 +1,1 @@
+DELETE FROM ?:payment_processors where processor = 'GoCrypto';

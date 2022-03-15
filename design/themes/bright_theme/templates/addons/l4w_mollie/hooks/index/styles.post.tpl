@@ -1,0 +1,1 @@
+{style src="addons/l4w_mollie/styles.css"}

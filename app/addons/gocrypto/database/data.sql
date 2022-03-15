@@ -1,0 +1,2 @@
+INSERT INTO ?:payment_processors (processor, processor_script, processor_template, admin_template, callback, type, addon)
+VALUES ('GoCrypto', 'gocrypto.php', 'views/orders/components/payments/cc_outside.tpl', 'gocrypto100.tpl', 'Y', 'P', 'gocrypto');

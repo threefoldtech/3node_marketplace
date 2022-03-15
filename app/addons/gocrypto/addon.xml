@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>gocrypto</id>
+    <version>1.0</version>
+    <default_language>en</default_language>
+    <priority>10050</priority>
+    <status>active</status>
+    <name>GoCrypto</name>
+    <!--auto_install>MULTIVENDOR,ULTIMATE</auto_install-->
+
+    <queries>
+        <item for="install" type="file">database/data.sql</item>
+    </queries>
+    <functions>
+        <item for="uninstall" type="file">database/uninstall.sql</item>
+    </functions>
+</addon>

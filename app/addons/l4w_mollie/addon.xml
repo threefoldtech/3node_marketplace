@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<addon scheme="3.0" edition_type="ROOT,ULT:VENDOR">
+    <id>l4w_mollie</id>
+    <version>1.4.5</version>
+    <default_language>nl</default_language>
+    <priority>100</priority>
+    <status>active</status>
+    <name>[l4w] Mollie All-in-one</name>
+
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+
+    <settings edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="template">
+                        <type>permanent_template</type>
+                        <default_value>statuses_map.tpl</default_value>
+                    </item>
+                    <item id="template">
+                        <type>permanent_template</type>
+                        <default_value>logo_uploader.tpl</default_value>
+                    </item>
+                    <item id="mollie_statuses">
+                        <type>hidden</type>
+                        <default_value>a:6:{s:8:"refunded";s:1:"I";s:4:"paid";s:1:"P";s:7:"pending";s:1:"O";s:4:"open";s:1:"O";s:9:"cancelled";s:1:"I";s:7:"expired";s:1:"F";}</default_value>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+
+    <queries>
+        <item type="file">database/data.sql</item>
+    </queries>
+    <functions>
+        <item for="install">fn_l4w_mollie_install</item>
+        <item for="uninstall">fn_l4w_mollie_uninstall</item>
+    </functions>
+</addon>
