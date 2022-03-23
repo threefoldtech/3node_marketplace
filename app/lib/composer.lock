@@ -909,7 +909,7 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.1.8",
+            "version": "v6.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
@@ -1302,7 +1302,7 @@
         },
         {
             "name": "smarty/smarty",
-            "version": "3.1.21.5",
+            "version": "3.1.43",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/cscart/smarty/archive/v3.1.21.5.zip"
