@@ -1302,7 +1302,7 @@
         },
         {
             "name": "smarty/smarty",
-            "version": "3.1.21.5",
+            "version": "3.1.43",
             "dist": {
                 "type": "zip",
                 "url": "https://github.com/cscart/smarty/archive/v3.1.21.5.zip"
